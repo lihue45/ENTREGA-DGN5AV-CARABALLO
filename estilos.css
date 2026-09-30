@@ -1,0 +1,786 @@
+  :root{
+    --crema:#FF825E;
+    --noche:#003B37;
+    --dorado:#ff6038;
+    --texto:#002421;
+    --borde:#FF6038;
+    --serif:'Helvetica neue', sans-serif;
+    --sans:'Inter', sans-serif;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  body{
+    background:var(--crema);
+    color:var(--texto);
+    font-family:var(--sans);
+    line-height:1.6;
+  }
+
+  h1,h2{
+    font-family:var(--serif);
+  }
+
+  .justificacion{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 auto;
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    padding:360px 0 40px; 
+    background-image: url(img/HEADER-INDEX.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header .justificacion{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    gap:24px;
+  }
+
+  .titulo h1{
+    font-size: 5rem;
+    line-height:1;
+  }
+
+  .musicalizate{
+    display:flex;
+    flex-direction:column;
+    padding-top: 190px;
+    align-items:center;
+    gap:6px;
+  }
+
+  .justificacion ul li a{
+   font-size: 1.5rem;
+
+  }
+
+  .boton-reproducir{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:var(--noche);
+    color:var(--crema);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    border:none;
+    cursor:pointer;
+  }
+
+  .panel-spotify{
+    width:100%;
+    margin:24px auto 0;
+  }
+
+  .panel-spotify[hidden]{
+    display:none;
+  }
+
+  .musicalizate span{
+    font-size:15px;
+    color:var(--texto);
+  }
+
+  nav ul{
+    justify-content: center;
+    display:flex;
+    gap:40px;
+    list-style:none;
+    margin-top:28px;
+    flex-wrap:wrap;
+  }
+
+  nav a{
+    color:var(--texto);
+    text-decoration:none;
+    font-size:15px;
+    letter-spacing:.02em;
+    padding-bottom:4px;
+    border-bottom:2px solid transparent;
+  }
+
+  nav a:hover, nav a:focus-visible{
+    border-bottom-color:var(--dorado);
+  }
+
+
+  /* ---------- INTRO / DONDE ---------- */
+  .introduccion{
+    padding:56px 0;
+    border-bottom:1px solid var(--borde);
+  }
+
+  .introduccion .justificacion{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+  }
+
+  .introduccion p{
+    max-width:46ch;
+    color:#002421;
+  }
+
+  .donde{
+  display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+  .donde h2{
+    font-size:3rem;
+    margin-bottom:16px;
+  }
+
+  .mapa{
+    aspect-ratio:4/3;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#9a927a;
+    font-size:14px;
+    width:100%;
+    height: 350px;
+  }
+
+  .mapa iframe{
+    width:100%;
+    height:100%;
+    border:0;
+  }
+
+  .direccion{
+    margin-top:12px;
+    font-size:14px;
+    color:#002421;
+    text-align:center;
+  }
+
+  /* ---------- CUANDO ---------- */
+  .cuando{
+    padding:56px 0;
+    text-align:center;
+    border-bottom:1px solid var(--borde);
+  }
+
+  .cuando h2{
+    font-size:3rem;
+    margin-bottom:32px;
+  }
+
+  .cuenta-regresiva{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:48px;
+  }
+
+  .cuenta-regresiva .bloque{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .cuenta-regresiva .numero{
+    font-size:2.25rem;
+    font-weight:600;
+  }
+
+  .cuenta-regresiva .etiqueta{
+    font-size:13px;
+    color:#002421;
+    margin-top:4px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+  }
+  
+  .fecha{
+    margin-top:28px;
+    font-size:13px;
+    letter-spacing:.05em;
+    color:#002421;
+  }
+
+
+  /* ---------- WISHLIST ---------- */
+  .wishlist{
+    padding:56px 0;
+    border-bottom:1px solid var(--borde);
+  }
+
+  .wishlist-cabecera{
+    text-align:center;
+    margin-bottom:32px;
+  }
+
+  .wishlist-cabecera h2{
+    font-size:3rem;
+  }
+
+  .wishlist-cabecera p{
+    color:#002421;
+    font-size:14px;
+    margin-top:6px;
+  }
+
+  .grilla-marcadores{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:16px;
+  }
+
+  .marcador{
+    aspect-ratio:3/4;
+    background:#fff;
+    border:1px solid var(--texto);
+  }
+
+  .marcador img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .ver-mas{
+    display:block;
+    text-align:center;
+    margin-top:24px;
+    font-size:13px;
+    letter-spacing:.05em;
+    color:var(--texto);
+    background:none;
+    border:none;
+    border-top:1px solid var(--texto);
+    border-bottom:1px solid var(--texto);
+    padding:10px 0;
+    width:100%;
+    cursor:pointer;
+    text-decoration:none;
+  }
+
+  /* ---------- CONFIRMAR PRESENCIA ---------- */
+  .confirma{
+    background:var(--noche);
+    color:var(--crema);
+    padding:56px 0;
+  }
+
+  .confirma h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:32px;
+  }
+
+  .confirma form{
+    max-width:520px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .campo{
+    display:grid;
+    grid-template-columns:130px 1fr;
+    align-items:center;
+    gap:16px;
+  }
+
+  .campo label{
+    font-size:14px;
+  }
+
+  .campo input{
+    padding:10px 12px;
+    border:1px solid #4b5378;
+    background:#FF825E;
+    color:var(--crema);
+    border-radius:2px;
+    font-family:var(--sans);
+  }
+
+  .campo input:focus-visible{
+    outline:2px solid var(--dorado);
+  }
+
+  .confirma button[type="submit"]{
+    margin-top:8px;
+    align-self:center;
+    padding:12px 40px;
+    background:var(--dorado);
+    color:var(--noche);
+    border:none;
+    font-family:var(--sans);
+    font-weight:600;
+    cursor:pointer;
+  }
+
+  /* ---------- LISTA DE INVITADOS ---------- */
+  .invitados{
+    padding:56px 0;
+    border-bottom:1px solid var(--borde);
+  }
+  
+  .invitados h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:32px;
+  }
+
+  .invitados-grilla{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:14px;
+    background-color:var(--crema);
+    bottom: 30px;
+  }
+
+  .invitado{
+    position:relative;
+    overflow:hidden;
+    aspect-ratio:3/4;
+    background:var(--noche);
+    color:var(--crema);
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    font-size:1rem;
+    font-weight: bold;
+    padding-bottom:10px;
+  }
+
+  .invitado img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .invitado span{
+    position:relative;
+  }
+
+  /* ---------- NO FALTES ---------- */
+  .no-faltes{
+    background:var(--noche);
+    color:var(--crema);
+    padding:40px 0px;
+    display:flex;
+    justify-content:center;
+  }
+
+  .no-faltes h2{
+    font-size:3rem;
+  }
+
+  /* ---------- CONTACTO ---------- */
+  footer{
+    padding:40px 0;
+    text-align:center;
+  }
+
+  footer h2{
+    font-size:3rem;
+    margin-bottom:12px;
+  }
+
+  footer p{
+    font-size:13px;
+    color:#002421;
+    margin-top:4px;
+  }
+
+  /* ---------- BOTÓN VOLVER ARRIBA ---------- */
+  .boton-subir{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:var(--noche);
+    color:var(--crema);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    border:none;
+    cursor:pointer;
+  }
+
+  .boton-subir[hidden]{
+    display:none;
+  }
+
+  header.encabezado-interno{
+    padding:24px 0 0;
+    background-image:none;
+  }
+
+  .pagina-interna .justificacion{
+    padding-left:24px;
+    padding-right:24px;
+  }
+
+  .encabezado-interno .encabezado-fila{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+  }
+
+  .encabezado-interno .titulo{
+    text-align:center;
+  }
+
+  .encabezado-interno .titulo h1{
+    font-size:4rem;
+  }
+
+  .encabezado-interno .musicalizate{
+    padding-top:0;
+    justify-self:end;
+  }
+
+  .inicio{
+    width:52px;
+    height:52px;
+    color:var(--texto);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-self:start;
+  }
+
+  .inicio svg{
+    width:52px;
+    height:52px;
+  }
+
+  .navegacion{
+    margin-top:20px;
+    border-top:2px solid var(--texto);
+    border-bottom:2px solid var(--texto);
+  }
+
+  .navegacion .justificacion{
+    display:block;
+  }
+
+  .navegacion ul{
+    justify-content:space-around;
+    margin-top:0;
+    padding:8px 0;
+  }
+
+  /* ---------- PÁGINA WISHLIST - INVITADOS ---------- */
+  .wishlist-pagina{
+    padding:40px 0 0;
+  }
+
+  .wishlist-pagina .marcador{
+    aspect-ratio:1/1;
+    text-align: center;
+    background-color:var(--crema);
+    border-color:var(--crema);
+    font-size:1rem;
+    font-weight: bold;
+    padding-bottom:10px;
+
+  }
+
+  .mensaje-final{
+    text-align:center;
+    font-size:3rem;
+    padding:48px 0;
+  }
+
+   .mensaje-final-invitados{
+    text-align:center;
+    font-size:3rem;
+    padding-top: 100px;
+
+    }
+
+  /* ---------- PÁGINA COMIDA ---------- */
+  .comida-pagina{
+    padding:40px 0;
+  }
+
+  .platos{
+    display:flex;
+    flex-direction:column;
+    gap:48px;
+  }
+
+  .plato{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:40px;
+  }
+
+  .plato-foto{
+    display:flex;
+    flex-direction:column;
+    border:2px solid var(--texto);
+  }
+
+  .plato-imagen-1,
+  .plato-imagen-2,
+  .plato-imagen-3 {
+    aspect-ratio:4/3;
+    background:#fff;
+      background-size: cover;
+ }
+
+.plato-imagen-1{
+    background-image: url(img/comida-1.webp); 
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  .plato-imagen-2{
+    background-image: url(img/comida-2.webp); 
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  .plato-imagen-3{
+    background-image: url(img/comida-3.jpg); 
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+
+  .plato-etiqueta{
+    border-top:2px solid var(--texto);
+    text-align:center;
+    font-family:var(--serif);
+    font-size:1.5rem;
+    padding:6px 0;
+  }
+
+  .plato-texto h2{
+    font-size:2rem;
+    text-align:center;
+    margin-bottom:12px;
+  }
+
+  .plato-texto p{
+    font-size:14px;
+    color:#002421;
+  }
+
+  .restricciones{
+    padding:16px 0 56px;
+    text-align:center;
+  }
+
+  .restricciones h2{
+    font-size:2.5rem;
+    margin-bottom:28px;
+  }
+
+  .formulario-restricciones{
+    max-width:720px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    gap:16px;
+  }
+
+  .formulario-restricciones input{
+    flex:1;
+    padding:10px 12px;
+    border:1px solid var(--texto);
+    background:#fff;
+    color:var(--texto);
+    border-radius:2px;
+    font-family:var(--sans);
+  }
+
+  .formulario-restricciones input:focus-visible{
+    outline:2px solid var(--dorado);
+  }
+
+  .boton-enviar{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:var(--noche);
+    color:var(--crema);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    border:none;
+    cursor:pointer;
+    flex:0 0 auto;
+  }
+
+  /* ---------- PÁGINA CONTACTO ---------- */
+  .contacto-pagina{
+    padding:56px 0;
+  }
+
+  .contacto-contenido{
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:56px;
+  }
+
+  .contacto-info p{
+    max-width:46ch;
+    color:#002421;
+  }
+
+  .contacto-datos{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    margin-top:24px;
+  }
+
+  .contacto-datos li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:14px;
+  }
+
+  .contacto-datos svg{
+    width:20px;
+    height:20px;
+    flex:0 0 auto;
+  }
+
+  .contacto-pagina .contacto-datos li a{
+    font-size:14px;
+    color:var(--texto);
+    text-decoration:none;
+  }
+
+  .formulario-contacto{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .campo-columna{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .campo-columna label{
+    font-size:14px;
+  }
+
+  .campo-columna input,
+  .campo-columna textarea{
+    padding:10px 12px;
+    border:1px solid var(--texto);
+    background:#fff;
+    color:var(--texto);
+    border-radius:2px;
+    font-family:var(--sans);
+  }
+
+  .campo-columna textarea{
+    resize:vertical;
+  }
+
+  .campo-columna input:focus-visible,
+  .campo-columna textarea:focus-visible{
+    outline:2px solid var(--dorado);
+  }
+
+  .formulario-contacto button[type="submit"]{
+    padding:12px 40px;
+    background:var(--dorado);
+    color:var(--noche);
+    border:none;
+    font-family:var(--sans);
+    font-weight:600;
+    cursor:pointer;
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width:760px){
+
+    nav ul{
+      gap:20px;
+      justify-content:center;
+    }
+
+    .introduccion .justificacion{
+      grid-template-columns:1fr;
+      gap:36px;
+    }
+
+    .cuenta-regresiva{
+      gap:32px;
+    }
+
+    .grilla-marcadores{
+      grid-template-columns:repeat(2,1fr);
+    }
+
+    .campo{
+      grid-template-columns:1fr;
+      gap:6px;
+    }
+
+    .invitados-grilla{
+      grid-template-columns:repeat(2,1fr);
+    }
+
+    .no-faltes{
+      flex-direction:column;
+      gap:16px;
+      text-align:center;
+    }
+
+    .encabezado-interno .titulo h1{
+      font-size:2.5rem;
+    }
+
+    .encabezado-interno .musicalizate span{
+      font-size:12px;
+    }
+
+    .plato{
+      grid-template-columns:1fr;
+      gap:20px;
+    }
+
+    .contacto-contenido{
+      grid-template-columns:1fr;
+      gap:36px;
+    }
+
+    .mensaje-final{
+      font-size:2rem;
+    }
+
+    .restricciones h2{
+      font-size:1.75rem;
+    }
+
+  }

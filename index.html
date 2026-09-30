@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estás Invitado a mi Fiesta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="justificacion">
+    <div class="titulo">
+      <h1>Estás<br>Invitado<br>a mi Fiesta</h1>
+    </div>
+    <div class="musicalizate">
+      <button class="boton-reproducir" id="boton-musica" aria-label="Reproducir música" aria-expanded="false">&#9658;</button>
+      <span>Musicalizate</span>
+    </div>
+  </div>
+  
+  </div>
+  <nav class="justificacion">
+    <ul>
+      <li><a href="wishlist.html">Wishlist</a></li>
+      <li><a href="invitados.html">Invitados</a></li>
+      <li><a href="comida.html">Comida</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="justificacion">
+    <div class="panel-spotify" id="panel-spotify" hidden>
+        <iframe data-testid="embed-iframe"
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/1iRMPr81sF43rdSco7Aq9C?utm_source=generator"
+        width="100%"
+        height="300"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+        </iframe>
+    </div>
+<section class="introduccion">
+  <div class="justificacion">
+    <p>
+      Bueno, sí. Otra vez llegó mi cumpleaños. No sé exactamente en qué momento pasó tan rápido el año, pero aparentemente ya es momento de reunirnos de nuevo, comer como si no hubiera un mañana (porque está todo pago) y hacer de cuenta que al día siguiente nadie tiene responsabilidades.
+La idea es festejar, pasarla bien y compartir un rato. Va a haber mucha comida, música y charlas incomodas, alguna foto que nadie pidió y, con un poco de suerte, algún momento que después podamos recordar sin tener que reconstruirlo entre todos (ahre).
+Como claramente mandar un mensaje diciendo “che, venite a mi cumple” no era suficiente, decidí hacer una página web. Porque si algo necesitaba mi cumpleaños era un poco de producción y probablemente más tiempo del que debería haberle dedicado.
+Acá vas a encontrar toda la información importante: dónde es, quiénes están invitados, qué vamos a comer y algunas cosas más. Así que podés recorrer la página, chusmear un poco y, si ya sabés que vas a venir, simplemente preparate.
+No hace falta traer un regalo enorme, una vestimenta específica ni un discurso preparado. Con que vengas con ganas de pasarla bien alcanza. Bueno… y si querés traer un regalo tampoco voy a decir que no.
+    </p>
+    <div class="donde">
+      <h2>¿Dónde?</h2>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8140.517971786523!2d-60.569728683953315!3d-33.90517694648849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b5301f49f929%3A0xe1df878315b2d23a!2sParque%20Belgrano!5e1!3m2!1ses!2sar!4v1790789997329!5m2!1ses!2sar"
+        width="100%"
+        height="100%"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+      <p class="direccion">Parque Belgrano, Pergamino, Buenos Aires</p>
+    </div>
+  </div>
+</section>
+
+<section class="cuando">
+  <div class="justificacion">
+    <h2>¿Cuando?</h2>
+    <div class="cuenta-regresiva" id="cuenta-regresiva">
+      <div class="bloque"><span class="numero" id="dias">00</span><span class="etiqueta">días</span></div>
+      <div class="bloque"><span class="numero" id="horas">00</span><span class="etiqueta">horas</span></div>
+      <div class="bloque"><span class="numero" id="minutos">00</span><span class="etiqueta">minutos</span></div>
+      <div class="bloque"><span class="numero" id="segundos">00</span><span class="etiqueta">segundos</span></div>
+    </div>
+    <p class="fecha">01/04/2027</p>
+  </div>
+</section>
+
+<section class="wishlist" id="wishlist">
+  <div class="justificacion">
+    <div class="wishlist-cabecera">
+      <h2>Wishlist</h2>
+      <p>No sabés qué regalar??? Acá te doy una mano</p>
+    </div>
+
+    <div class="grilla-marcadores">
+
+      <a href="https://www.mercadolibre.com.ar/p/MLA19154266?matt_tool=89488245&pdp_filters=item_id:MLA1965638750&ua=KcWIxhoiO_buj6NUnEENrD_FlGDl4ell_3ooXisEjxj1CRI#origin=share&sid=share&wid=MLA1965638750&action=copy" target="_blank">
+       
+          <div class="marcador"><img src="img/wishlist-1.webp" alt="Regalo 1"></div>
+      </a>
+      <a href="https://articulo.mercadolibre.com.ar/MLA-901173739?matt_tool=89488245&ua=7egFcPyVYT7Qt88D_QyahxtYKCBFS9tgH1a5jZejZxc6ssw#origin=share&sid=share&action=copy" target="_blank">
+
+        <div class="marcador"><img src="img/wishlist-2.webp" alt="Regalo 2"></div>
+      </a>
+      <a href="https://www.mercadolibre.com.ar/p/MLA70528548?matt_tool=89488245&pdp_filters=item_id:MLA1842643387&ua=HzO09dQC5WU7bFdv0BG8MN2fk9RN9gG4bxsv3BaPKJ6NU6I#origin=share&sid=share&wid=MLA1842643387&action=copy" target="_blank">
+
+         <div class="marcador"><img src="img/wishlist-3.webp" alt="Regalo 3"></div>
+      </a>
+      <a href="https://articulo.mercadolibre.com.ar/MLA-1977906852?attributes=COLOR_SECONDARY_COLOR:TmVncm8gRGV0YWxsZSBncmlz,FABRIC_DESIGN:TGlzbw==&matt_tool=89488245&ua=oa7tEiqDZAoss2HYw6kGCgEBXhmolDtLmFEfygO1qXfDuUE#origin=share&sid=share&action=copy" target="_blank">
+
+        <div class="marcador"><img src="img/wishlist-4.webp" alt="Regalo 4"></div>
+      </a>
+      <a href="https://www.mercadolibre.com.ar/p/MLA15506626?matt_tool=89488245&pdp_filters=item_id:MLA1105021025&ua=KsI6gPBRvnA4ELBFgHaJrAyabTiflTyuZxqo3zQfYNE6pHU#origin=share&sid=share&wid=MLA1105021025&action=copy" target="_blank">
+
+          <div class="marcador"><img src="img/wishlist-5.webp" alt="Regalo 5"></div>
+      </a>
+    </div>
+    </div>
+    <a class="ver-mas" href="wishlist.html">Ver más</a>
+</section>
+
+<section class="confirma">
+  <div class="justificacion">
+    <h2>Confirmá tu presencia</h2>
+    <form>
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div class="campo">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido">
+      </div>
+      <div class="campo">
+        <label for="contacto">Número de contacto</label>
+        <input type="tel" id="contacto" name="contacto">
+      </div>
+      <button type="submit">Confirmar</button>
+    </form>
+  </div>
+</section>
+
+<section class="invitados" id="invitados">
+  <div class="justificacion">
+    <h2>Lista de invitados</h2>
+    <div class="invitados-grilla">
+      <div class="invitado"><img src="img/invitado-1.avif" alt="polaco"><span>el polaco</span></div>
+      <div class="invitado"><img src="img/invitado-2.jpg" alt="mara"><span>Obama</span></div>
+      <div class="invitado"><img src="img/invitado-3.jpg" alt="dona"><span>Ricky Martin</span></div>
+      <div class="invitado"><img src="img/invitado-4.webp" alt="messi"><span>messi</span></div>
+      <div class="invitado"><img src="img/invitado-5.jpg" alt="messi2"><span>messi prime</span></div>
+    </div>
+    <a class="ver-mas" href="invitados.html">Ver más</a>
+</section>
+
+<div class="no-faltes">
+    <h2>No faltes!!</h2>
+</div>
+
+<footer id="contacto">
+  <div class="justificacion">
+    <h2>Contacto</h2>
+    <p>instagram: @lihue.u</p>
+    <p>teléfono: 2477-211490</p>
+    <p>mail: lihuec50@gmail.com</p>
+  </div>
+</footer>
+
+<button class="boton-subir" id="boton-subir" aria-label="Volver arriba" hidden>&#9650;</button>
+
+<script src="script.js"></script>
+</body>
+</html>

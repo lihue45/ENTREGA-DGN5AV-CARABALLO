@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comida - Estás Invitado a mi Fiesta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body class="pagina-interna">
+
+<header class="encabezado-interno">
+  <div class="justificacion encabezado-fila">
+    <a class="inicio" href="index.html" aria-label="Volver al inicio">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </a>
+    <div class="titulo">
+      <h1>Comida</h1>
+    </div>
+    <div class="musicalizate">
+      <button class="boton-reproducir" id="boton-musica" aria-label="Reproducir música" aria-expanded="false">&#9658;</button>
+      <span>Musicalizate</span>
+    </div>
+  </div>
+  <nav class="navegacion">
+    <div class="justificacion">
+      <ul>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="invitados.html">Invitados</a></li>
+        <li><a href="comida.html">Comida</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+   <div class="justificacion">
+    <div class="panel-spotify" id="panel-spotify" hidden>
+        <iframe data-testid="embed-iframe"
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/1iRMPr81sF43rdSco7Aq9C?utm_source=generator"
+        width="100%"
+        height="300"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+        </iframe>
+    </div>
+  </div>
+</header>
+
+<section class="comida-pagina">
+  <div class="justificacion platos">
+    <article class="plato">
+      <div class="plato-foto">
+        <div class="plato-imagen-1"></div>
+        <span class="plato-etiqueta">Entrada</span>
+      </div>
+      <div class="plato-texto">
+        <h2>Empanadas de carne</h2>
+        <p>
+        Una clásica empanada argentina, preparada con una masa dorada, tierna y ligeramente crocante, que envuelve un relleno abundante y sabroso. En su interior combina carne vacuna picada, cebolla y morrón, condimentados con pimentón, comino, ají molido y una pizca de sal y pimienta para lograr un sabor intenso y equilibrado.
+
+El relleno se cocina lentamente para integrar todos los ingredientes y conservar una textura jugosa, mientras que la masa aporta el contraste perfecto al dorarse durante la cocción. Según la receta, también puede incorporar huevo duro, aceitunas verdes o pasas de uva, aportando diferentes matices de sabor y textura.
+
+Ideal para comer caliente, como entrada, acompañamiento o plato principal. Una preparación sencilla y tradicional que combina ingredientes cotidianos en una empanada llena de sabor, aroma y carácter
+        </p>
+      </div>
+    </article>
+
+    <article class="plato">
+      <div class="plato-foto">
+        <div class="plato-imagen-2"></div>
+        <span class="plato-etiqueta">Principal</span>
+      </div>
+      <div class="plato-texto">
+        <h2>Asado</h2>
+        <p>
+        El asado es uno de los platos más representativos de la cocina argentina y se caracteriza por la cocción lenta de diferentes cortes de carne sobre las brasas. Su preparación destaca por el sabor ahumado, la textura jugosa y la costra dorada que se forma en la superficie de la carne durante la cocción.
+
+Entre los cortes más utilizados se encuentran el asado de tira, vacío, entraña, tapa de asado y matambre, que pueden acompañarse con chorizos, morcillas y achuras como chinchulines o mollejas. La carne suele condimentarse de manera sencilla, principalmente con sal gruesa, permitiendo que el sabor propio de cada corte sea el protagonista.
+
+La cocción se realiza sobre una parrilla colocada a cierta distancia de las brasas, controlando el calor y el tiempo para conseguir una carne tierna y sabrosa. Tradicionalmente se acompaña con chimichurri, ensaladas, papas o pan, convirtiéndose no solo en una comida, sino también en una preparación asociada al encuentro, la familia y los momentos compartidos.
+        </p>
+      </div>
+    </article>
+
+    <article class="plato">
+      <div class="plato-foto">
+        <div class="plato-imagen-3"></div>
+        <span class="plato-etiqueta">Postre</span>
+      </div>
+      <div class="plato-texto">
+        <h2>Flan</h2>
+        <p>
+        El flan es un postre clásico, suave y cremoso, preparado principalmente a base de huevos, leche y azúcar. Su textura delicada y uniforme se consigue mediante una cocción lenta, generalmente a baño María, que permite que la mezcla cuaje sin perder su consistencia húmeda y sedosa.
+
+Una de sus características más distintivas es el caramelo, elaborado a partir de azúcar derretida hasta alcanzar un tono dorado y un sabor ligeramente tostado. Este caramelo recubre el molde y, al desmoldar el flan, forma una salsa dulce que acompaña cada porción.
+
+Tradicionalmente se sirve frío y puede acompañarse con dulce de leche, crema o ambos. Su sabor equilibrado entre lo dulce, lo lácteo y el toque tostado del caramelo lo convierte en un postre sencillo y muy popular dentro de la cocina argentina. Además, su preparación admite pequeñas variaciones, como agregar esencia de vainilla o ralladura de limón para aportar aroma y personalidad.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="restricciones">
+  <div class="justificacion">
+    <h2>¿Tenés alguna restricción alimenticia?</h2>
+    <form class="formulario-restricciones">
+      <input type="text" id="prohibiciones" name="prohibiciones" placeholder="Prohibiciones" aria-label="Prohibiciones">
+      <button class="boton-enviar" type="submit" aria-label="Enviar">&#9658;</button>
+    </form>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
